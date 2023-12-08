@@ -32,7 +32,7 @@ const GiftCard = ({ gift }) => {
                 <p className='text-red-500'>Price : <span className='pl-2 font-medium'>{gift.price}</span></p>
             </div>
 
-            {currentUser.isAdmin ? (
+            {currentUser?.isAdmin ? (
                 <div className='flex py-2 px-4 justify-between'>
                     <BaseButton handleClick={() => navigate(`gift/update/${gift._id}`)} title="Sửa" className='px-4 py-1 bg-brand-500 text-white rounded-md' />
                     <BaseButton handleClick={() => mutation.mutate(gift._id)} title="Xóa" className='px-4 py-1 text-white bg-brand-500 rounded-md' />

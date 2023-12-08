@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { FaUser } from "react-icons/fa6";
 import { Link, useNavigate } from 'react-router-dom';
 import { logoutSuccess } from '../../features/auth/authSlice';
+import formatCurrency from '../../utils/formatCurrency';
 
 const Header = () => {
     const currentUser = useSelector(state => state.auth.currentUser)
@@ -25,7 +26,7 @@ const Header = () => {
                             </div>
                         </div>
 
-                        {!currentUser.isAdmin && <p className='text-lg text-gray-100'>Point : {currentUser?.point}</p>}
+                        {!currentUser.isAdmin && <p className='text-lg text-gray-100'>Point : {formatCurrency(currentUser?.point)}</p>}
                         {!currentUser.isAdmin && <p className='text-lg text-white cursor-pointer' onClick={() => navigate('/history')}>Lịch sử đổi quà</p>}
                     </div>
                 )

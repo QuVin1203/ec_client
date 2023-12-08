@@ -13,7 +13,7 @@ const HomeScreen = () => {
                 <p className="text-brand-500 text-3xl text-center">Danh sách phần quà</p>
             </div>
 
-            {currentUser.isAdmin && <div className='text-right px-[100px] pt-10 space-x-2'>
+            {currentUser?.isAdmin && <div className='text-right px-[100px] pt-10 space-x-2'>
                 <BaseButton handleClick={() => navigate('/gift/create')} title="Thêm quà" className='py-2 px-7 bg-brand-500 text-white rounded-xl ' />
                 <BaseButton handleClick={() => navigate('/users')} title="Quản lí nhân viên" className='py-2 px-7 bg-brand-500 text-white rounded-xl ' />
             </div>}
