@@ -17,7 +17,8 @@ const ModalConfirm = () => {
     const mutation = useMutation({
         mutationFn: () => exchangeGift(currentUser._id, productInfo._id),
         onSuccess(data) {
-            console.log(data)
+            alert("Đổi quà thành công")
+            dispatch(closeModal())
             dispatch(loginSuccess(data))
         },
         onError(err) {
