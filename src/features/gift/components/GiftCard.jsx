@@ -29,7 +29,7 @@ const GiftCard = ({ gift }) => {
             <img src={gift?.image} alt="" className='object-contain max-h-[170px]' />
             <div className='py-2 flex items-center text-lg justify-between px-4'>
                 <p className='text-red-500'>Name:<span className='pl-2 font-medium'>{gift?.title}</span></p>
-                <p className='text-red-500'>Price : <span className='pl-2 font-medium'>{gift.price}</span></p>
+                <p className='text-red-500'>Point : <span className='pl-2 font-medium'>{gift.price}</span></p>
             </div>
 
             {currentUser?.isAdmin ? (
