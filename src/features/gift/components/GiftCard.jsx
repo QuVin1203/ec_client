@@ -39,7 +39,13 @@ const GiftCard = ({ gift }) => {
                 </div>
             ) : (
                 <div className='px-3 py-2 flex justify-between'>
-                    <div className='flex items-center space-x-2 cursor-pointer hover:text-brand-500 group' onClick={() => navigate(`gift/${gift._id}`)}>
+                    <div
+                        className='flex items-center space-x-2 cursor-pointer hover:text-brand-500 group'
+                        onClick={(e) => {
+                            e.stopPropagation()
+                            e.preventDefault()
+                            navigate(`gift/${gift._id}`)
+                        }}>
                         <IoIosInformationCircleOutline className='text-slate-700 group-hover:text-brand-500' size='28' />
                         <p>Chi tiết</p>
                     </div>
