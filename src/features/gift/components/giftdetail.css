@@ -1,0 +1,48 @@
+.picture{
+  border: 8px solid gray;
+  border-radius: 10px;
+}
+
+#name{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#detail{
+    font-size: 40px;
+}
+
+#btn-buy{
+    font-size: 20px;
+    padding: 15px 0px;
+    background-color: #8ACDD7;
+    text-align: center;
+    font-weight: 800;
+    border-radius: 12px;
+    margin-top: 250px;
+}
+
+#btn-buy:hover{
+    background-color: white;
+    color: #FF90BC;
+    border: 2px solid black;
+    transition-delay: .2s;
+}
+
+#heart {
+    display: flex;
+    cursor: pointer;
+}
+
+#heart img{
+    height: 25px;
+    margin-right: 5px;
+}
+
+#price {
+    padding-top: 20px;
+}
+
+#price #name{
+    padding-bottom: 10px;
+}

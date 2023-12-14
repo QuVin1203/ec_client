@@ -1,0 +1,152 @@
+.desktop-1 {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.desktop-1 .overlap-group-wrapper {
+    background-color: #e7e7e7;
+    width: 1440px;
+    height: 397px;
+}
+
+.desktop-1 .overlap-group {
+    position: relative;
+    height: 397px;
+    background: linear-gradient(180deg, rgba(249, 181, 208, 0) 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.desktop-1 .line {
+    position: absolute;
+    width: 974px;
+    height: 1px;
+    top: 299px;
+    left: 233px;
+    object-fit: cover;
+}
+
+.desktop-1 .text-wrapper {
+    position: absolute;
+    top: 316px;
+    left: 233px;
+    font-family: "Bai Jamjuree-Medium", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.desktop-1 .overlap {
+    position: absolute;
+    width: 384px;
+    height: 50px;
+    top: 93px;
+    left: 237px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.desktop-1 .div {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    font-family: "Roboto-Light", Helvetica;
+    font-weight: 300;
+    color: #d9d9d9;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.desktop-1 .fluent-arrow-up-wrapper {
+    position: absolute;
+    width: 51px;
+    height: 50px;
+    top: 93px;
+    left: 646px;
+    background-color: #ff4419;
+    border-radius: 15px;
+}
+
+.desktop-1 .fluent-arrow-up {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: 6px;
+    left: 6px;
+}
+
+.desktop-1 .logogift {
+    position: absolute;
+    width: 183px;
+    height: 115px;
+    top: 159px;
+    left: 219px;
+    object-fit: cover;
+}
+
+.desktop-1 .frame {
+    align-items: flex-end;
+    gap: 40px;
+    top: 198px;
+    left: 412px;
+    display: inline-flex;
+    position: absolute;
+}
+
+.desktop-1 .img {
+    position: relative;
+    width: 43px;
+    height: 43px;
+    object-fit: cover;
+}
+
+.desktop-1 .ISO-english-logo {
+    position: absolute;
+    width: 223px;
+    height: 77px;
+    top: 141px;
+    left: 984px;
+    object-fit: cover;
+}
+
+.desktop-1 .frame-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    top: 108px;
+    left: 763px;
+    display: inline-flex;
+    position: absolute;
+}
+
+.desktop-1 .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.desktop-1 .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: "Roboto-Regular", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}

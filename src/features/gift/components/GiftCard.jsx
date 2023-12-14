@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { openModal } from '../../../components/modal/modalSlice';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { deleteGift } from '../services/deleteGift';
+import '../components/giftcard.css'
 
 const GiftCard = ({ gift }) => {
     const currentUser = useSelector(state => state.auth.currentUser)
@@ -25,11 +26,12 @@ const GiftCard = ({ gift }) => {
         }
     })
     return (
-        <div className='shadow-xl '>
-            <img src={gift?.image} alt="" className='object-contain max-h-[170px]' />
-            <div className='py-2 flex items-center text-lg justify-between px-4'>
-                <p className='text-red-500'>Name:<span className='pl-2 font-medium'>{gift?.title}</span></p>
-                <p className='text-red-500'>Point : <span className='pl-2 font-medium'>{gift.price}</span></p>
+        <div className='shadow-xl  ' id='desktop'>
+            <img src={gift?.image} alt="" className='object-contain max-h-[200px]' id='img-pro'/>
+            <div className='py-2  items-center text-lg justify-between px-4'>
+                <p className='text-black-500'>Name:<span className='pl-2 font-medium'>{gift?.title}</span></p>
+                <br /> 
+                <p className='text-black-500 ' >Point : <span className='pl-2 font-medium'>{gift.price}</span></p>
             </div>
 
             {currentUser?.isAdmin ? (
@@ -49,8 +51,8 @@ const GiftCard = ({ gift }) => {
                         <IoIosInformationCircleOutline className='text-slate-700 group-hover:text-brand-500' size='28' />
                         <p>Chi tiết</p>
                     </div>
-                    <div>
-                        <BaseButton handleClick={() => dispatch(openModal(gift))} title="Đổi quà" className='py-1 px-[10px] rounded-lg text-white bg-brand-500' />
+                    <div className='btn-buy'>
+                        <BaseButton handleClick={() => dispatch(openModal(gift))} title="ĐỔI QUÀ" className='py-1 px-[20px] rounded-lg text-white bg-brand-500' />
                     </div>
                 </div>
             )}
@@ -58,6 +60,29 @@ const GiftCard = ({ gift }) => {
 
             <ModalConfirm />
         </div>
+
+/* <div class="desktop">
+        <div class="overlap-wrapper">
+        <div class="overlap">
+        <div class="overlap-group">
+        <div class="group">
+        <div class="div">
+        <div class="rectangle"></div>
+        <div class="ellipse"></div>
+        <div class="ellipse-2"></div>
+        </div>
+        </div>
+        <div class="text-wrapper">XÓA</div>
+        </div>
+        <div class="rectangle-2"></div>
+        <div class="text-wrapper-2">Point: ...............</div>
+        <div class="text-wrapper-3">Name: ...............</div>
+        <div class="text-wrapper-4">1</div>
+        </div>
+        </div>
+</div> */
+        
+
     )
 }
 

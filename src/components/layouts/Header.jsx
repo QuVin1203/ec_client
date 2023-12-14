@@ -4,14 +4,19 @@ import { FaUser } from "react-icons/fa6";
 import { Link, useNavigate } from 'react-router-dom';
 import { logoutSuccess } from '../../features/auth/authSlice';
 import formatCurrency from '../../utils/formatCurrency';
+import logo from '../../Assets/Logo.png'
+import './Header.css'
 
 const Header = () => {
     const currentUser = useSelector(state => state.auth.currentUser)
     const navigate = useNavigate()
     const dispatch = useDispatch()
     return (
-        <div className='py-[50px] px-[160px] bg-brand-500 flex items-center justify-between'>
-            <p className='text-3xl cursor-pointer font-medium text-white' onClick={() => navigate('/')}>Give Away</p>
+        <div className='py-[12px] px-[160px] bg-brand-500 flex items-center justify-between' id='hide-header'>
+            {/* <p className='text-3xl cursor-pointer font-medium text-white' onClick={() => navigate('/')}>Gift Away</p> */}
+                <Link to={'http://127.0.0.1:5500/ec_client/src/features/auth/index/index.html'}>
+                <img src={logo} className='logo-bg'  alt='logo' /*onClick={() => navigate('../../index.html')}*/  />
+                </Link>
 
             {currentUser
                 ?
@@ -33,9 +38,9 @@ const Header = () => {
                 : (
                     <div className='flex space-x-4 item text-xl text-white'>
 
-                        <Link to={'/sign-up'}>
+                        {/* <Link to={'/sign-up'}>
                             <p>Đăng ký</p>
-                        </Link>
+                        </Link> */}
                         <Link to={'/sign-in'}>
                             <p>Đăng nhập</p>
                         </Link>

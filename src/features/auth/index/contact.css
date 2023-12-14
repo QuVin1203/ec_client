@@ -1,0 +1,39 @@
+:root{
+    --pink: #F9B5D0;
+    --orange: #FF4419;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.support-container{
+    height: 75vh;
+    width: 1170px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.support-container .name{
+    font-size: 32px;
+    color: #333;
+    font-weight: bold;
+    margin: 15px 0;
+    line-height: 1.3;
+}
+
+
+.support-container .support-content{
+    background-color: #FBFAF6;
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+p {
+    font-size: 23px;
+    padding-top: 20px;
+}

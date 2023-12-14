@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300&family=Inter:wght@300&display=swap');
+
+:root{
+    --pink: #F9B5D0;
+    --orange: #FF4419;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 1164px;
+    margin: 0 auto;
+    background-color: #FFC0D9;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.main-container nav .logo img{
+    width: 100px;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    right: 100px;
+    font-family: 'Inter', sans-serif;
+}
+
+nav ul button{
+    background-color: var(--orange);
+    font-size: 15px;
+    padding: 7px 20px;
+    border-radius: 2px;
+    border: none;
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+}
+
+nav ul button a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    margin: 0 16px;
+    position: relative;
+    right: 93px;
+}
+
+nav ul li a{
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
