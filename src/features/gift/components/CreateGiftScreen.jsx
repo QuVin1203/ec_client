@@ -27,7 +27,7 @@ const CreateTopicScreen = () => {
     }
     return (
         <div className='pt-6 pb-10'>
-            <p className='py-10 text-center text-2xl font-bold bg-gray-200'>Create Topic</p>
+            <p className='py-10 text-center text-2xl font-bold bg-gray-200'>Create Gift</p>
             <div className='pt-10 flex flex-col justify-center items-center'>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='space-y-6'>

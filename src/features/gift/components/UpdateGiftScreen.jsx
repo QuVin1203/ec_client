@@ -45,7 +45,7 @@ const UpdateTopicScreen = () => {
         <div className='py-6'>
             <div><Toaster position="top-center"
                 reverseOrder={false} /></div>
-            <p className='py-10 text-center text-2xl font-bold bg-gray-200'>Update Topic</p>
+            <p className='py-10 text-center text-2xl font-bold bg-gray-200'>Update Gift</p>
             <div className='pt-10 flex flex-col justify-center items-center'>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className='space-y-10'>
